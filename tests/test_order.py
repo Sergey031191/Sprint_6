@@ -4,7 +4,7 @@ import pytest
 from pages.main_page import MainPage
 from pages.order_page import OrderPage
 from data import order_page_data
-from data.main_page_data import MAIN_PAGE_URL
+from data.urls import PagesUrls
 from locators import main_page_locators, order_page_locators
 
 
@@ -37,7 +37,7 @@ class TestScooterOrder:
          ]
     ])
     def test_scooter_order(self, order_button, fio_pack, date, rent_time, scooter_color, comment):
-        self.driver.get(MAIN_PAGE_URL)
+        self.driver.get(PagesUrls.MAIN_PAGE_URL)
         main_page = MainPage(self.driver)
         main_page.wait_for_element_to_be_clickable(main_page_locators.YANDEX_LOGO)
         main_page.order_button_click(order_button)

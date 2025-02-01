@@ -4,7 +4,7 @@ from selenium import webdriver
 from locators import main_page_locators
 from pages.main_page import MainPage
 from data import main_page_data
-from data.main_page_data import MAIN_PAGE_URL
+from data.urls import PagesUrls
 
 
 class TestFaqQuestions:
@@ -47,7 +47,7 @@ class TestFaqQuestions:
                                   main_page_locators.TEXT_MKAD],
                              ])
     def test_faq_list_click_on_questions_check_answer_true(self, text, button, popup_text):
-        self.driver.get(MAIN_PAGE_URL)
+        self.driver.get(PagesUrls.MAIN_PAGE_URL)
         main_page = MainPage(self.driver)
         main_page.click_question(button)
         main_page.wait_for_visibility_of_element(popup_text)

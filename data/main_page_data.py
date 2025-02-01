@@ -1,4 +1,3 @@
-MAIN_PAGE_URL = "https://qa-scooter.praktikum-services.ru/"
 class FaqAnswersData:
     COST_ANSWER = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'
     FEW_ANSWER = 'Пока что у нас так: один заказ — один самокат. ' \

@@ -1,5 +1,3 @@
-ORDER_PAGE_URL = "https://qa-scooter.praktikum-services.ru/order"
-
 FIO_PACK_1 = ["Азатот", "Ктулхович", "Рльех 2а", "89999999999"]
 DATE_1 = "03.12.2024"
 COMMENT_1 = "Глубоко"
