@@ -1,0 +1,23 @@
+from selenium.webdriver.common.by import By
+
+NAME_FIELD = [By.XPATH, ".//input[@placeholder='* Имя']"]
+SURNAME_FIELD = [By.XPATH, ".//input[@placeholder='* Фамилия']"]
+ADRES_FIELD = [By.XPATH, ".//input[@placeholder='* Адрес: куда привезти заказ']"]
+METRO_FIELD = [By.CLASS_NAME, "select-search__input"]
+STATION = [By.XPATH, ".//button[@value='23']"]
+PHONE_FIELD = [By.XPATH, ".//input[@placeholder='* Телефон: на него позвонит курьер']"]
+NEXT_BUTTON = [By.XPATH, ".//button[text()='Далее']"]
+RENT_HEADER = (By.CLASS_NAME, 'Order_Header__BZXOb')
+RENT_DATE_FIELD = [By.XPATH, ".//input[@placeholder='* Когда привезти самокат']"]
+RENT_PERIOD_FIELD = [By.CLASS_NAME, 'Dropdown-placeholder']
+ONDE_DAY_RENT = [By.XPATH, '//div[text() = "сутки"]']
+FOUR_DAY_RENT = [By.XPATH, '//div[text() = "четверо суток"]']
+SCOOTER_BLACK = [By.ID, 'black']
+SCOOTER_GRAY = [By.ID, 'grey']
+COMMENT_FIELD = [By.XPATH, ".//input[@placeholder='Комментарий для курьера']"]
+ORDER_BUTTON = [By.XPATH, '//div[@class = "Order_Buttons__1xGrp"]/button[text()="Заказать"]']
+ORDER_POPUP_HEADER = [By.CLASS_NAME, "Order_ModalHeader__3FDaJ"]
+ORDER_YES_BUTTON = [By.XPATH, "//button[text()='Да']"]
+ORDER_SUCCESS_HEADER = [By.CLASS_NAME, "Order_ModalHeader__3FDaJ"]
+ORDER_POPUP_STATUS_BUTTON = [By.XPATH, "//button[text()='Посмотреть статус']"]
+ORDER_SCOOTER_LOGO_BUTTON = [By.CLASS_NAME, "Header_LogoScooter__3lsAR"]
